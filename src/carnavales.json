@@ -1,0 +1,581 @@
+[
+  {
+    "type": "Carnaval",
+    "name": "de Negros y Blancos",
+    "city": "Pasto",
+    "state": "Nariño",
+    "from": [
+      2,
+      1
+    ],
+    "to": [
+      6,
+      1
+    ],
+    "fixed": true,
+    "dates": [
+      {
+        "name": "Dia de las velitas",
+        "day": -26
+      },
+      {
+        "name": "Arco Iris en el Asfalto",
+        "day": -5
+      },
+      {
+        "name": "Desfile de Años Viejos",
+        "day": -2
+      },
+      {
+        "name": "Desfile de las Colonias",
+        "day": 0
+      },
+      {
+        "name": "Carnavalito",
+        "day": 0
+      },
+      {
+        "name": "Canto a la Tierra",
+        "day": 1
+      },
+      {
+        "name": "La llegada de la Familia Castañeda",
+        "day": 2
+      },
+      {
+        "name": "Dia de los Negros",
+        "day": 3
+      },
+      {
+        "name": "Dia de los Blancos",
+        "day": 4
+      }
+    ]
+  },
+  {
+    "type": "Carnaval",
+    "name": "Multicolor de la Frontera",
+    "city": "Ipiales",
+    "state": "Nariño",
+    "from": [
+      2,
+      1
+    ],
+    "to": [
+      6,
+      1
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Negros y Blancos de Túrreques",
+    "city": "Túrreques",
+    "state": "Nariño",
+    "from": [
+      3,
+      1
+    ],
+    "to": [
+      6,
+      1
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Ocaña",
+    "city": "Ocaña",
+    "state": "Norte de Santander",
+    "from": [
+      4,
+      1
+    ],
+    "to": [
+      6,
+      1
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "Ferias y Fiestas",
+    "name": "de San H_erónimo",
+    "city": "Málaga",
+    "state": "Santander",
+    "from": [
+      4,
+      1
+    ],
+    "to": [
+      8,
+      1
+    ],
+    "fixed": true,
+    "dates": [
+      {
+        "name": "Llegada de Pericles Carnaval",
+        "day": 0
+      },
+      {
+        "name": "Carnaval del Oriente",
+        "day": 2
+      }
+    ]
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Riosucio",
+    "city": "Riosucio",
+    "state": "Caldas",
+    "from": [
+      5,
+      1
+    ],
+    "to": [
+      10,
+      1
+    ],
+    "fixed": false,
+    "dates": [
+      {
+        "name": "El Convite",
+        "day": -15
+      },
+      {
+        "name": "Alegre Despertar del Carnaval",
+        "day": 0
+      },
+      {
+        "name": "Carnaval Infantil",
+        "day": 0
+      },
+      {
+        "name": "Entrada de Colonias",
+        "day": 1
+      },
+      {
+        "name": "Entrada del Diablo",
+        "day": 1
+      },
+      {
+        "name": "Cuadrillas",
+        "day": 2
+      },
+      {
+        "name": "Quema del Diablo",
+        "day": 6
+      }
+    ]
+  },
+  {
+    "type": "Fiesta",
+    "name": "de Sincelejo",
+    "city": "Sncelejo",
+    "state": "Sucre",
+    "from": [
+      20,
+      1
+    ],
+    "to": [
+      20,
+      1
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "",
+    "name": "Batalla de Flores",
+    "city": "Santo Tomás",
+    "state": "Atlántico",
+    "from": [
+      2,
+      2,
+      2024
+    ],
+    "to": [
+      2,
+      2,
+      2024
+    ],
+    "fixed": false,
+    "dates": []
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Barranquilla",
+    "city": "Barranquilla",
+    "state": "Atlántico",
+    "from": [
+      10,
+      2,
+      2024
+    ],
+    "to": [
+      13,
+      2,
+      2024
+    ],
+    "fixed": false,
+    "dates": [
+      {
+        "name": "Lectura del Bando",
+        "day": -28
+      },
+      {
+        "name": "Guacherna",
+        "day": -8
+      },
+      {
+        "name": "Coronación de la Reina",
+        "day": -2
+      },
+      {
+        "name": "Batalla de las Flores",
+        "day": 0
+      },
+      {
+        "name": "Desfile del Rey Momo",
+        "day": 0
+      },
+      {
+        "name": "Gran Parada de Tradición y Folclor",
+        "day": 1
+      },
+      {
+        "name": "Gran Parada Comparsas",
+        "day": 2
+      },
+      {
+        "name": "Festival de Orquestas y Acordeones",
+        "day": 2
+      },
+      {
+        "name": "Entierro de H_oselito Carnaval",
+        "day": 3
+      }
+    ]
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Mompox",
+    "city": "Santa Cruz de Mompox",
+    "state": "Bolívar",
+    "from": [
+      10,
+      2,
+      2024
+    ],
+    "to": [
+      13,
+      2,
+      2024
+    ],
+    "fixed": false,
+    "dates": []
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Riohacha",
+    "city": "Riohacha",
+    "state": "La Guah_ira",
+    "from": [
+      10,
+      2,
+      2024
+    ],
+    "to": [
+      13,
+      2,
+      2024
+    ],
+    "fixed": false,
+    "dates": []
+  },
+  {
+    "type": "Feria",
+    "name": "de las Flores",
+    "city": "Medellín",
+    "state": "Antioquia",
+    "from": [
+      26,
+      6,
+      2024
+    ],
+    "to": [
+      5,
+      7,
+      2024
+    ],
+    "fixed": false,
+    "dates": []
+  },
+  {
+    "type": "Festival",
+    "name": "Folclórico Colombiano",
+    "city": "Ibagué",
+    "state": "Tolima",
+    "from": [
+      14,
+      6
+    ],
+    "to": [
+      30,
+      6
+    ],
+    "fixed": false,
+    "dates": [
+      {
+        "name": "Elección Embajadora Municipal del Folclor",
+        "day": 0
+      },
+      {
+        "name": "Imposición de Bandas Candidatas Encuentro Municipal del Folclor",
+        "day": 1
+      },
+      {
+        "name": "Festival de Orquestas Pijao de Oro",
+        "day": 2
+      },
+      {
+        "name": "Encuentro Municipal del Folclor",
+        "day": 3
+      },
+      {
+        "name": "Dia del Aguardiente",
+        "day": 6
+      },
+      {
+        "name": "Dia del Sombrero",
+        "day": 7
+      },
+      {
+        "name": "Gran Desfile de San Juan",
+        "day": 8
+      },
+      {
+        "name": "Cabalgata Sanjuanera",
+        "day": 9
+      },
+      {
+        "name": "Elección Embajadora Departamental del Folclor",
+        "day": 10
+      },
+      {
+        "name": "Desfile de Candidatas al Encuentro Nacional del Folclor",
+        "day": 13
+      },
+      {
+        "name": "Desfile de Caballitos de Palo",
+        "day": 15
+      },
+      {
+        "name": "Gran Desfile de San Pedro",
+        "day": 16
+      }
+    ]
+  },
+  {
+    "type": "Ferias y Fiestas",
+    "name": "de San Pedro en El Espinal",
+    "city": "El Espinal",
+    "state": "Tolima",
+    "from": [
+      16,
+      6
+    ],
+    "to": [
+      1,
+      7
+    ],
+    "fixed": false,
+    "dates": [
+      {
+        "name": "Reinado Infantil",
+        "day": -11
+      },
+      {
+        "name": "Coronación Reinado Infantil",
+        "day": -10
+      },
+      {
+        "name": "Imposición de Bandas a las Candidatas al Reinado Municipal",
+        "day": -8
+      },
+      {
+        "name": "Festival Musical",
+        "day": 0
+      },
+      {
+        "name": "Pregón de San Pedro",
+        "day": 5
+      },
+      {
+        "name": "Concurso Municipal de Comparsas",
+        "day": 6
+      },
+      {
+        "name": "Elección y Coronación de la Reina Municipal",
+        "day": 7
+      },
+      {
+        "name": "Festival Gastronomico",
+        "day": 11
+      },
+      {
+        "name": "Embarcación de San Pedro por el Magdalena",
+        "day": 12
+      },
+      {
+        "name": "Reinado Nacional de San Pedro",
+        "day": 13
+      },
+      {
+        "name": "Concurso Nacional de Comparsas",
+        "day": 14
+      },
+      {
+        "name": "Alborada Musical",
+        "day": 15
+      }
+    ]
+  },
+  {
+    "type": "Fiesta",
+    "name": "Patronal del Carmen de Bolívar",
+    "city": "Carmen de Bolívar",
+    "state": "Bolívar",
+    "from": [
+      7,
+      7
+    ],
+    "to": [
+      17,
+      7
+    ],
+    "fixed": true,
+    "dates": [
+      {
+        "name": "Encuentro Nacional de Bandas de Porro y Clarinetes",
+        "day": -7
+      },
+      {
+        "name": "Bolas de Candela",
+        "day": 7
+      },
+      {
+        "name": "Encuentro Nacional de Bandas de Porro y Clarinetes",
+        "day": 8
+      },
+      {
+        "name": "Bolas de Candela",
+        "day": 8
+      },
+      {
+        "name": "Encuentro Nacional de Bandas de Porro y Clarinetes",
+        "day": 9
+      },
+      {
+        "name": "Bolas de Candela",
+        "day": 9
+      },
+      {
+        "name": "Encuentro Nacional de Bandas de Porro y Clarinetes",
+        "day": 10
+      },
+      {
+        "name": "Quema de Castillos",
+        "day": 10
+      }
+    ]
+  },
+  {
+    "type": "Fiesta",
+    "name": "de San Pacho",
+    "city": "Quibdó",
+    "state": "Chocó",
+    "from": [
+      20,
+      9
+    ],
+    "to": [
+      4,
+      10
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "Festival",
+    "name": "Audiovisual de los Montes de María",
+    "city": "Carmen de Bolívar",
+    "state": "Bolívar",
+    "from": [
+      1,
+      11
+    ],
+    "to": [
+      6,
+      11
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "Feria",
+    "name": "de Cali",
+    "city": "Cali",
+    "state": "Valle del Cauca",
+    "from": [
+      25,
+      12
+    ],
+    "to": [
+      30,
+      12
+    ],
+    "fixed": true,
+    "dates": []
+  },
+  {
+    "type": "Festival",
+    "name": "Multicultural de los Montes de María",
+    "city": "Carmen de Bolívar",
+    "state": "Bolívar",
+    "from": [
+      1,
+      12,
+      2022
+    ],
+    "to": [
+      2,
+      12,
+      2022
+    ],
+    "fixed": false,
+    "dates": []
+  },
+  {
+    "type": "Festival Nacional",
+    "name": "de la Leyenda y Danza",
+    "city": "Ciénaga",
+    "state": "Magdalena",
+    "from": [],
+    "to": [],
+    "fixed": false,
+    "dates": []
+  },
+  {
+    "type": "Carnaval",
+    "name": "de Corozal",
+    "city": "Corozal",
+    "state": "Sucre",
+    "from": [],
+    "to": [],
+    "fixed": false,
+    "dates": []
+  }
+]
