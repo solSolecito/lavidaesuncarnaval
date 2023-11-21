@@ -1,0 +1,13 @@
+{
+  "name": "lavidaesuncarnaval",
+  "version": "1.0.0",
+  "description": "yesmasbellovivircantando",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "solSolecito",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

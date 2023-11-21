@@ -1,0 +1,317 @@
+:root {
+  --color-main: #639;
+  --color-main-d: #435;
+  --color-main-l: #879;
+
+  --color-red-1: #d26;
+  --color-red-2: #d23;
+  --color-red-3: #d32;
+  --color-red-4: #d62;
+
+  --color-yellow-1: #d92;
+  --color-yellow-2: #dc2;
+  --color-yellow-3: #cd2;
+  --color-yellow-4: #9d2;
+
+  --color-green-1: #6d2;
+  --color-green-2: #3d2;
+  --color-green-3: #2d3;
+  --color-green-4: #2d6;
+
+  --color-cyan-1: #2d9;
+  --color-cyan-2: #2dc;
+  --color-cyan-3: #2cd;
+  --color-cyan-4: #29d;
+
+  --color-blue-1: #26d;
+  --color-blue-2: #23d;
+  --color-blue-3: #32d;
+  --color-blue-4: #62d;
+
+  --color-magenta-1: #92d;
+  --color-magenta-2: #c2d;
+  --color-magenta-3: #d2c;
+  --color-magenta-4: #d29;
+
+  --color-red-1-d: #724;
+  --color-red-2-d: #723;
+  --color-red-3-d: #732;
+  --color-red-4-d: #742;
+
+  --color-yellow-1-d: #752;
+  --color-yellow-2-d: #762;
+  --color-yellow-3-d: #672;
+  --color-yellow-4-d: #572;
+
+  --color-green-1-d: #472;
+  --color-green-2-d: #372;
+  --color-green-3-d: #273;
+  --color-green-4-d: #274;
+
+  --color-cyan-1-d: #275;
+  --color-cyan-2-d: #276;
+  --color-cyan-3-d: #267;
+  --color-cyan-4-d: #257;
+
+  --color-blue-1-d: #247;
+  --color-blue-2-d: #237;
+  --color-blue-3-d: #327;
+  --color-blue-4-d: #427;
+
+  --color-magenta-1-d: #527;
+  --color-magenta-2-d: #627;
+  --color-magenta-3-d: #726;
+  --color-magenta-4-d: #725;
+
+  --color-red-1-l: #d8a;
+  --color-red-2-l: #d89;
+  --color-red-3-l: #d98;
+  --color-red-4-l: #da8;
+
+  --color-yellow-1-l: #db8;
+  --color-yellow-2-l: #dc8;
+  --color-yellow-3-l: #cd8;
+  --color-yellow-4-l: #bd8;
+
+  --color-green-1-l: #ad8;
+  --color-green-2-l: #9d8;
+  --color-green-3-l: #8d9;
+  --color-green-4-l: #8da;
+
+  --color-cyan-1-l: #8db;
+  --color-cyan-2-l: #8dc;
+  --color-cyan-3-l: #8cd;
+  --color-cyan-4-l: #8bd;
+
+  --color-blue-1-l: #8ad;
+  --color-blue-2-l: #89d;
+  --color-blue-3-l: #98d;
+  --color-blue-4-l: #a8d;
+
+  --color-magenta-1-l: #b8d;
+  --color-magenta-2-l: #c8d;
+  --color-magenta-3-l: #d8c;
+  --color-magenta-4-l: #d8b;
+
+  --color-white: #ddd;
+  --color-black: #222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+}
+main {
+    width: 100%;
+    max-width: 840px;
+    padding: 24px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  font-family: 'Montserrat';
+  border-collapse: collapse;
+}
+td,
+th {
+  width: calc(100% / 7);
+  /*border-left: 1px solid var(--color-main-l);
+  border-right: 1px solid var(--color-main-l);*/
+  border-bottom: 3px solid var(--color-white) ;
+}
+th {
+  background-color: var(--color-main);
+  color: var(--color-white);
+  font-size: 18px;
+  
+}
+.dates-row > * {
+  border-top: 1px solid var(--color-main-l);
+  text-align: right;
+  font-size: 18px;
+  padding: 12px;
+}
+.events-row > td {
+  text-align: center;
+  vertical-align: center;
+  font-size: 15px;
+  color: var(--color-white);
+  text-shadow: var(--color-black);
+  font-weight: 600;
+  border-left: none;
+  border-right: none;
+  padding: 12px;
+  border-radius: 24px;
+  }
+
+
+.subevents-row > td {
+  text-align: left;
+  vertical-align: top;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.subevents-row > td > p {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 3px;
+    border-radius: 6px;
+  }
+.red-1 {
+  background-color: var(--color-red-1);
+}
+.red-2 {
+  background-color: var(--color-red-2);
+}
+.red-3 {
+  background-color: var(--color-red-3);
+}
+.red-4 {
+  background-color: var(--color-red-4);
+}
+.yellow-1 {
+  background-color: var(--color-yellow-1);
+}
+.yellow-2 {
+  background-color: var(--color-yellow-2);
+}
+.yellow-3 {
+  background-color: var(--color-yellow-3);
+}
+.yellow-4 {
+  background-color: var(--color-yellow-4);
+}
+.green-1 {
+  background-color: var(--color-green-1);
+}
+.green-2 {
+  background-color: var(--color-green-2);
+}
+.green-3 {
+  background-color: var(--color-green-3);
+}
+.green-4 {
+  background-color: var(--color-green-4);
+}
+.cyan-1 {
+  background-color: var(--color-cyan-1);
+}
+.cyan-2 {
+  background-color: var(--color-cyan-2);
+}
+.cyan-3 {
+  background-color: var(--color-cyan-3);
+}
+.cyan-4 {
+  background-color: var(--color-cyan-4);
+}
+.blue-1 {
+  background-color: var(--color-blue-1);
+}
+.blue-2 {
+  background-color: var(--color-blue-2);
+}
+.blue-3 {
+  background-color: var(--color-blue-3);
+}
+.blue-4 {
+  background-color: var(--color-blue-4);
+}
+.magenta-1 {
+  background-color: var(--color-magenta-1);
+}
+.magenta-2 {
+  background-color: var(--color-magenta-2);
+}
+.magenta-3 {
+  background-color: var(--color-magenta-3);
+}
+.magenta-4 {
+  background-color: var(--color-magenta-4);
+}
+
+.red-1-l {
+    background-color: var(--color-red-1-l);
+  }
+  .red-2-l {
+    background-color: var(--color-red-2-l);
+  }
+  .red-3-l {
+    background-color: var(--color-red-3-l);
+  }
+  .red-4-l {
+    background-color: var(--color-red-4-l);
+  }
+  .yellow-1-l {
+    background-color: var(--color-yellow-1-l);
+  }
+  .yellow-2-l {
+    background-color: var(--color-yellow-2-l);
+  }
+  .yellow-3-l {
+    background-color: var(--color-yellow-3-l);
+  }
+  .yellow-4-l {
+    background-color: var(--color-yellow-4-l);
+  }
+  .green-1-l {
+    background-color: var(--color-green-1-l);
+  }
+  .green-2-l {
+    background-color: var(--color-green-2-l);
+  }
+  .green-3-l {
+    background-color: var(--color-green-3-l);
+  }
+  .green-4-l {
+    background-color: var(--color-green-4-l);
+  }
+  .cyan-1-l {
+    background-color: var(--color-cyan-1-l);
+  }
+  .cyan-2-l {
+    background-color: var(--color-cyan-2-l);
+  }
+  .cyan-3-l {
+    background-color: var(--color-cyan-3-l);
+  }
+  .cyan-4-l {
+    background-color: var(--color-cyan-4-l);
+  }
+  .blue-1-l {
+    background-color: var(--color-blue-1-l);
+  }
+  .blue-2-l {
+    background-color: var(--color-blue-2-l);
+  }
+  .blue-3-l {
+    background-color: var(--color-blue-3-l);
+  }
+  .blue-4-l {
+    background-color: var(--color-blue-4-l);
+  }
+  .magenta-1-l {
+    background-color: var(--color-magenta-1-l);
+  }
+  .magenta-2-l {
+    background-color: var(--color-magenta-2-l);
+  }
+  .magenta-3-l {
+    background-color: var(--color-magenta-3-l);
+  }
+  .magenta-4-l {
+    background-color: var(--color-magenta-4-l);
+  }
+  .smallText {
+    font-size: 12px;
+    text-align: right;
+  }
