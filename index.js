@@ -1,5 +1,7 @@
+import carnavales from './src/carnavales.json' assert { type: 'json' }
 import { createCalendar, addCarnavales } from './src/createCalendar.js'
 import { renderCalendar } from './src/rendercalendar.js'
+//import jsonToMd from './src/jsonToMd.js'
 
 const bisiestos = {
   2023: false,
@@ -14,13 +16,13 @@ const calendar = createCalendar(
   bisiestos[currentDate.getFullYear()],
   bisiestos[currentDate.getFullYear() + 1]
 )
-const festiveCalendar = addCarnavales(currentDate, calendar)
+const festiveCalendar = addCarnavales(currentDate, carnavales, calendar)
 const container = document.getElementById('container')
 
-console.log(festiveCalendar)
-
 if (container) {
-  renderCalendar(currentDate, container, festiveCalendar.calendar)
+  renderCalendar(currentDate, container, festiveCalendar)
 } else {
   console.log('oops!')
 }
+
+// jsonToMd(currentDate, carnavales)

@@ -1,20 +1,6 @@
-import carnavales from './carnavales.json' assert { type: 'json' }
-import { colors, getDate, alreadyPassed } from './utils.js'
-
-const monthDays = (bisiesto = false) => [
-  31,
-  bisiesto ? 29 : 28,
-  31,
-  30,
-  31,
-  30,
-  31,
-  31,
-  30,
-  31,
-  30,
-  31
-]
+import substractOutdated from './sustractOutdated.js'
+import { colors, getDate } from './utils.js'
+import { monthDays } from './dates.js'
 
 export function createCalendar (
   currentDate,
@@ -59,43 +45,48 @@ export function createCalendar (
   return calendar
 }
 
-export function addCarnavales (currentDate, calendar) {
-  const outdated = []
-  let color = 0
-  const colorsLength = colors.length
-  // Debo recorrer uno por uno los objetos
-
-  carnavales.forEach(c => {
-    // Si el carnaval no tiene fecha fija y la fecha que tiene ya pasó va a outdated
-    if (!c.fixed && alreadyPassed(currentDate, c.to)) {
-      outdated.push(c.type + ' ' + c.name)
-    } else {
-      // Si no, la agrego al calendario
-
-      const dif = 1 + Math.round((getDate(c.to) - getDate(c.from)) / 86400000)
-      for (let h = 0; h < dif; h++) {
-        // Recorre cada uno de los dias para agregar el carnaval a los eventos porque ajá
-        const day = c.from[0] + h
-        const month = c.from[1]
-        const fullDate = getDate([day, month])
-        const event = {
-          title: `${c.type} ${c.name}`,
-          city: c.city,
-          state: c.state,
-          subEvents: c.dates.filter(d => h == d.day),
-          color: colors[color]
-        }
-        calendar[fullDate.getFullYear()][fullDate.getMonth()][
-          fullDate.getDate() - 1
-        ].events.push(event)
-      }
-      // Ahora faltan los PRECARNAVALES
-      color = (color + 1) % colorsLength
+export function addCarnavales (currentDate, carnavales, calendar) {
+  const { actualized } = substractOutdated(currentDate, carnavales)
+  // Revisar divisores
+  const divisors = [24, 12, 8, 6]
+  let numberOfCarnavales = actualized.length
+  let divisor = 0;
+  let res = 24;
+  let i = 0;
+  while (res != 0 || i < divisors.length) {
+    let currentRes = numberOfCarnavales % divisors[i]
+    if (currentRes < res) {
+      res = currentRes
+      divisor = divisors[i]
     }
+    i++
+  }
+
+  let gap = 24/divisor;
+  let color = 0
+
+  actualized.forEach(c => {
+    const dif = 1 + Math.round((getDate(c.to) - getDate(c.from)) / 86400000)
+    for (let h = 0; h < dif; h++) {
+      // Recorre cada uno de los dias para agregar el carnaval a los eventos porque ajá
+      const day = c.from[0] + h
+      const month = c.from[1]
+      const fullDate = getDate([day, month])
+      const event = {
+        title: `${c.type} ${c.name}`,
+        city: c.city,
+        state: c.state,
+        subEvents: c.dates.filter(d => h == d.day),
+        color: colors[color]
+      }
+      calendar[fullDate.getFullYear()][fullDate.getMonth()][
+        fullDate.getDate() - 1
+      ].events.push(event)
+    }
+
+    color = (color + gap) % 24
+    // Ahora faltan los PRECARNAVALES
   })
 
-  return {
-    outdated,
-    calendar
-  }
+  return calendar
 }
