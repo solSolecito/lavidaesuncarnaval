@@ -143,10 +143,12 @@ export function renderCalendar (currentDate, container, calendar, firstDay = 0) 
           mainTr.appendChild(document.createElement('td'))
         } else if (d == e.from) {
           const titleCell = document.createElement('td')
-          titleCell.appendChild(createElement('p', e.title))
-          titleCell.appendChild(createElement('p', `${e.city}, ${e.state}`, 'smallText'))
+          const titleDiv = document.createElement('div')
+          titleDiv.appendChild(createElement('p', e.title))
+          titleDiv.appendChild(createElement('p', `${e.city}, ${e.state}`, 'smallText'))
           titleCell.setAttribute('colspan', 1 + e.to - e.from)
-          titleCell.classList.add([e.color])
+          titleDiv.classList.add([e.color])
+          titleCell.appendChild(titleDiv)
           mainTr.appendChild(titleCell)
         }
       }
