@@ -1,14 +1,5 @@
 import { alreadyPassed } from './utils.js'
-
-const weekDays = [
-  'Dom',
-  'Lun',
-  'Mar',
-  'Mié',
-  'H_ue',
-  'Vie',
-  'Sáb'
-]
+import { weekDays } from './dates.js'
 
 function createElement (type, content = '', className = '') {
   const element = document.createElement(type)

@@ -1,14 +1,4 @@
 export const colors = [
-  'cyan-4',
-  'cyan-3',
-  'cyan-2',
-  'cyan-1',
-  'green-4',
-  'green-3',
-  'green-2',
-  'green-1',
-  'yellow-4',
-  'yellow-3',
   'yellow-2',
   'yellow-1',
   'red-4',
@@ -23,6 +13,16 @@ export const colors = [
   'blue-3',
   'blue-2',
   'blue-1',
+  'cyan-4',
+  'cyan-3',
+  'cyan-2',
+  'cyan-1',
+  'green-4',
+  'green-3',
+  'green-2',
+  'green-1',
+  'yellow-4',
+  'yellow-3',
 ]
 
 export function getDate (arrayDate) {
