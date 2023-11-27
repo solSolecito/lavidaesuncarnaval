@@ -1,4 +1,4 @@
-import { monthNames } from './dates.js'
+import { monthNames } from '../dates.js'
 import substractOutdated from './sustractOutdated.js'
 
 // Esta función convierte en texto para un archivo md la información proveniente de la lista de carnavales

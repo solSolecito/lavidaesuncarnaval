@@ -1,11 +1,10 @@
-import substractOutdated from './sustractOutdated.js'
-import { colors, getDate } from './utils.js'
-import { monthDays } from './dates.js'
+import { monthDays } from './utils/dates.js'
 
-export function createCalendar (
+export default function createCalendar (
   currentDate,
   isThisYearBisiesto = false,
-  isNextYearBisiesto = false
+  isNextYearBisiesto = false,
+  festivos = []
 ) {
   const ty = currentDate.getFullYear() // This year
   const ny = ty + 1 // Next year
@@ -42,50 +41,27 @@ export function createCalendar (
 
   // Añadir festivos
 
-  return calendar
-}
-
-export function addCarnavales (currentDate, carnavales, calendar) {
-  const { actualized } = substractOutdated(currentDate, carnavales)
-  // Revisar divisores
-  const divisors = [24, 12, 8, 6]
-  let numberOfCarnavales = actualized.length
-  let divisor = 0;
-  let res = 24;
-  let i = 0;
-  while (res != 0 || i < divisors.length) {
-    let currentRes = numberOfCarnavales % divisors[i]
-    if (currentRes < res) {
-      res = currentRes
-      divisor = divisors[i]
-    }
-    i++
-  }
-
-  let gap = 24/divisor;
-  let color = 0
-
-  actualized.forEach(c => {
-    const dif = 1 + Math.round((getDate(c.to) - getDate(c.from)) / 86400000)
-    for (let h = 0; h < dif; h++) {
-      // Recorre cada uno de los dias para agregar el carnaval a los eventos porque ajá
-      const day = c.from[0] + h
-      const month = c.from[1]
-      const fullDate = getDate([day, month])
-      const event = {
-        title: `${c.type} ${c.name}`,
-        city: c.city,
-        state: c.state,
-        subEvents: c.dates.filter(d => h == d.day),
-        color: colors[color]
+  festivos.forEach(f => {
+    if (f.nextMonday) {
+      const gap = (8 - calendar[ny][f.date[1] - 1][f.date[0] - 1].day) % 7
+      if (f.date[0] + gap <= monthDays(isThisYearBisiesto)[f.date[1] - 1]) {
+        calendar[ty][f.date[1] - 1][f.date[0] + gap - 1].holliday = true
+      } else {
+        calendar[ty][f.date[1]][
+          f.date[0] + gap - 1 - monthDays(isThisYearBisiesto)[f.date[1]]
+        ].holliday = true
       }
-      calendar[fullDate.getFullYear()][fullDate.getMonth()][
-        fullDate.getDate() - 1
-      ].events.push(event)
+      if (f.date[0] + gap <= monthDays(isNextYearBisiesto)[f.date[1] - 1]) {
+        calendar[ny][f.date[1] - 1][f.date[0] + gap - 1].holliday = true
+      } else {
+        calendar[ny][f.date[1]][
+          f.date[0] + gap - 1 - monthDays(isNextYearBisiesto)[f.date[1]]
+        ].holliday = true
+      }
+    } else {
+      calendar[ty][f.date[1] - 1][f.date[0] - 1].holliday = true
+      calendar[ny][f.date[1] - 1][f.date[0] - 1].holliday = true
     }
-
-    color = (color + gap) % 24
-    // Ahora faltan los PRECARNAVALES
   })
 
   return calendar

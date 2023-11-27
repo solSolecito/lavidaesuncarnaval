@@ -1,5 +1,4 @@
 export const colors = [
-  'yellow-2',
   'yellow-1',
   'red-4',
   'red-3',
@@ -23,9 +22,10 @@ export const colors = [
   'green-1',
   'yellow-4',
   'yellow-3',
+  'yellow-2',
 ]
 
-export function getDate (arrayDate) {
+export function getDatefromArray (currentDate, arrayDate) {
   const today = new Date()
   if (arrayDate.length < 2) {
     return today
@@ -54,6 +54,6 @@ export function alreadyPassed (currentDate, arrayDate = []) {
   if (arrayDate.length < 2) {
     return true
   } else {
-    return Math.floor((currentDate - getDate(arrayDate)) / 86400000) > 0
+    return Math.floor((currentDate - getDatefromArray (currentDate, arrayDate)) / 86400000) > 0
   }
 }

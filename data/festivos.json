@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Año Nuevo",
+        "date": [ 1, 1],
+        "fixed": true,
+        "nextMonday": false
+    },
+    {
+        "name": "Dia de Reyes",
+        "date": [ 6, 1],
+        "fixed": true,
+        "nextMonday": true
+    },
+    {
+        "name": "Dia de Independencia",
+        "date": [ 20, 7],
+        "fixed": true,
+        "nextMonday": false
+    },
+    {
+        "name": "Batalla de Boyacá",
+        "date": [ 7, 7],
+        "fixed": true,
+        "nextMonday": false
+    },
+    {
+        "name": "Navidad",
+        "date": [ 25, 12],
+        "fixed": true,
+        "nextMonday": false
+    }
+]
